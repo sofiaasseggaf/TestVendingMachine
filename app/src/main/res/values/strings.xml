@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestVendingMachine</string>
+
+    <string name="vend_dlg_insert_coin">Insert coins</string>
+    <string name="vend_dlg_invalid">Uang kertas yang bisa digunakan : 2000, 5000, 10000, 20000, 50000</string>
+
+    <string name="vend_help_coin">Hanya gunakan uang kertas 2000, 5000, 10000, 20000, 50000</string>
+    <string name="vend_display_default">VENDING MACHINE</string>
+    <string name="vend_action_return">Kembalian</string>
+    <string name="vend_action_purchase_default">Nama Produk</string>
+    <string name="vend_action_insert">Masukkan Uang</string>
+    <string name="vend_action_collect_default">Ambil Kembalian</string>
+    <string name="vend_action_collect" formatted="true">Kembalian: $%3.2f</string>
+    <string name="vend_img_samples">Snack Enak!</string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.VendActivity">
+
+        <TextView
+            android:id="@+id/vend_help_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Hanya gunakann\nuang kertas 2000, 5000,\n10000, 20000, 50000"
+            android:textAlignment="textEnd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.00999999" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/vend_display"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/vend_help_coins"
+            app:layout_constraintTop_toBottomOf="@+id/vend_help_coins"
+            tools:text="@string/vend_display_default" />
+
+        <Button
+            android:id="@+id/vend_btn_return"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/vend_action_return"
+            app:layout_constraintEnd_toEndOf="@+id/vend_display"
+            app:layout_constraintTop_toBottomOf="@+id/vend_display" />
+
+        <Button
+            android:id="@+id/vend_btn_purchase_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/vend_action_purchase_default"
+            app:layout_constraintEnd_toEndOf="@+id/vend_btn_return"
+            app:layout_constraintTop_toBottomOf="@+id/vend_btn_return" />
+
+        <Button
+            android:id="@+id/vend_btn_purchase_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/vend_action_purchase_default"
+            app:layout_constraintEnd_toEndOf="@+id/vend_btn_purchase_1"
+            app:layout_constraintTop_toBottomOf="@+id/vend_btn_purchase_1" />
+
+        <Button
+            android:id="@+id/vend_btn_purchase_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/vend_action_purchase_default"
+            app:layout_constraintEnd_toEndOf="@+id/vend_btn_purchase_2"
+            app:layout_constraintTop_toBottomOf="@+id/vend_btn_purchase_2" />
+
+        <Button
+            android:id="@+id/vend_btn_purchase_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/vend_action_purchase_default"
+            app:layout_constraintEnd_toEndOf="@+id/vend_btn_purchase_3"
+            app:layout_constraintTop_toBottomOf="@+id/vend_btn_purchase_3" />
+
+        <Button
+            android:id="@+id/vend_btn_purchase_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/vend_action_purchase_default"
+            app:layout_constraintEnd_toEndOf="@+id/vend_btn_purchase_4"
+            app:layout_constraintTop_toBottomOf="@+id/vend_btn_purchase_4" />
+
+        <Button
+            android:id="@+id/vend_btn_insert"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/vend_action_insert"
+            app:layout_constraintBottom_toTopOf="@+id/vend_btn_collect"
+            app:layout_constraintEnd_toEndOf="@+id/vend_btn_purchase_3" />
+
+        <Button
+            android:id="@+id/vend_btn_collect"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/vend_action_collect_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/vend_btn_insert" />
+
+        <ImageView
+            android:id="@+id/vend_img_snacks"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/vend_img_samples"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vend_display"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/snacks" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
